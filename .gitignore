@@ -2,4 +2,8 @@
 *swp
 *.aux
 *.log
-
+*.gz
+*.toc
+*.snm
+*.out
+*.nav
