@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sun Oct 20 09:41:09 GMT+04:00 2013
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=
+mainTexFile=CHbZ.tex
+outputFile=CHbZ.pdf
+langSpell=
+markDer=true
+srcDir=
