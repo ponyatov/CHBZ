@@ -1,12 +1,7 @@
-(Самарский) Технологическо-Образовательный Кластер "Чебураторный Завод"
+HackSpace "Чебураторный Завод"
 
 Комплект презентационных материалов
 
-Сделан в LaTeX (MikTeX 2.9 win32/win64)
-
-(by) Dmitry Ponyatov <dponyatov@gmail.com>
-
 Описание общей идеи, различные замечания, отличия от FabLab и т.п.
 
-
-
+(by) Dmitry Ponyatov <dponyatov@gmail.com>
