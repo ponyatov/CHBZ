@@ -1,5 +1,5 @@
-*~
 *.swp
+*~
 tmp/*
-*.gz
+*.synctex.gz
 
