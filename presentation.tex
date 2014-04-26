@@ -14,8 +14,10 @@
 % \date{}
 \logo{\includegraphics[width=0.1\paperwidth]{logo/chbz.png}}
 
-\newcommand{\frm}[1]{\frametitle{#1}\section{#1}}
+\newcommand{\fsec}[1]{\frametitle{#1}\section{#1}}
+\newcommand{\fsub}[1]{\frametitle{#1}\subsection{#1}}
 \newcommand{\FL}{FabLab}
+\newcommand{\HS}{HackSpace}
 
 \begin{document}
 
@@ -23,7 +25,7 @@
 
 \frame{\tableofcontents}
 
-\frame{\frm{Идея}
+\frame{\fsec{Идея}
 
 \textbf{Создание межвузовской учебно-производственной площадки по модели
 \href{http://ru.wikipedia.org/wiki/Fab_lab}{HackSpace/FabLab}:}
@@ -32,8 +34,8 @@
 
 \FL\ (англ. fabrication laboratory) --- это небольшая мастерская,
 предлагающая участникам возможность изготавливать необходимые им детали на
-станках, выполнять монтаж и отладку электронных устройств, проводить семинары и
-т.п.
+станках, выполнять монтаж и отладку электронных устройств, проводить 
+семинары, учебные курсы т.п.
 
 \bigskip
 
@@ -70,8 +72,8 @@ Fab Lab в Амстердаме, Сообщество Waag
   \item лазерный, плазменный или гидроабразивный резак для раскроя листовых
   материалов
   \item субтрактивные фрезерные и токарные станки с ЧПУ
-  \item средства быстрого прототипирования, обычно 3D-принтер из пластиковой
-  проволоки (RepRap или аналогичный)
+  \item средства быстрого прототипирования, обычно экструзионный 3D-принтер из
+  пластиковой проволоки (RepRap или аналогичный)
   \item оборудование для прототипного штучного изготовления печатных плат
   \item рабочие места для разработки, сборки и тестирования микропроцессорной и
   цифровой электроники
@@ -92,17 +94,17 @@ Fab Lab в Амстердаме, Сообщество Waag
 }
 
 \frame{
-HackSpace --- более свободная идеология, она расширяет идею FabLab,
+\HS\ --- более свободная идеология, она расширяет идею \FL,
 разрешая выполнять коммерческие проекты, сдавать рабочие места и оборудование
-в сверхсрочную аренду\footnote{хотя в вырожденном коммерческом случае это
-просто офисное помещение сдаваемое в аренду на уровне рабочих мест фрилансерам},
+в сверхсрочную почасовую аренду\footnote{\ хотя в вырожденном коммерческом
+случае это просто офисное помещение сдаваемое в аренду на уровне рабочих мест фрилансерам},
 что дает возможность выйти на уровень самоокупаемости, и использовать
 полученные ден.средства на развитие, оплату постоянных сотрудников, платные
-курсы, расзодные материалы и т.п.
+курсы, расходные материалы и т.п.
 
 \bigspace
 
-В частности, б\textbf{о}льшая идеологическая свобода по сравнению в \FL\, дает
+В частности, б\'{о}льшая идеологическая свобода по сравнению в \FL\, дает
 возможность сотрудничать с поставщиками оборудования и инструментов
 (демонстрационно-рекламная площадка), программного обеспечения (проведение
 курсов), и выполнять совместную работы над коммерческими проектами с другими
@@ -110,7 +112,42 @@ HackSpace --- более свободная идеология, она расширяет идею FabLab,
 
 }
 
-\frame{\frm{Цели}
+\frame{
+\href{https://www.youtube.com/watch?v=wpNFA-l-WP4}{Дмитрий Ливанов: \FL\ ---
+индивидуальное производство}
+
+\href{https://www.youtube.com/watch?v=TacK-hVCtxs}{\FL\ ПолиТех}
+
+\href{https://www.youtube.com/watch?v=aPKH60sW_CM}{Century College \FL\ (англ.)}
+
+\href{https://www.youtube.com/watch?v=igOmlR_nkWM}{Фаблаб в лицее №1502}
+
+\href{https://www.youtube.com/watch?v=L2xv7Gu50Yw}{подробная видеоинструкция по
+оборудованию}\footnote{\ в начале большая заставка без звука}
+ 
+\href{https://www.youtube.com/watch?v=IbdkFD0sLrQ}{школьный вариант (нудняк)}
+
+}
+
+\frame{\fsec{Интеграция}
+
+На текущий момент рабочие группы СГАУ сидят по углам, зачастую не зная о
+возможностях, наличном оборудовании и вообще о существовании друг друга.
+
+Предлагается объединить существующие ресурсы:
+\begin{itemize}
+  \item виртуально: установить ip-камеры (как это делают \FL ы) с голосом,
+  и оформить механизм бесплатного взаимного использования ресурсов
+  (оборудования, специалистов, и обмена опытом)
+  \item при поддержке ВУЗа и наличии площадей: выделенное общее 
+  пром.помещение (см. \ref{site}) с постоянными сотрудниками (достаточно 2х
+  человек), приходящими по необходимости сотрудниками, и гостевым свободным
+  доступом для студентов и сотрудников СГАУ.
+\end{itemize}
+
+}
+
+\frame{\fsec{Цели}
 
 \begin{enumerate}
   \item предоставление производственной площадки, оборудования и
@@ -123,29 +160,47 @@ HackSpace --- более свободная идеология, она расширяет идею FabLab,
 \end{enumerate}
 }
 
-\frame{\frm{Этапы}
+\frame{\fsec{Инновации}
+
+В рамках RoadMap по вхождению СГАУ в top100 ведущих ВУЗов, \HS\ как
+инновационный метод обучения, выявление недостатков основной учебной программы,
+доучивание технических специалистов для предприятий Самарской области.
+
+Вхождение в международную сеть \FL\ является формой международного
+сотрудничества в области высшего образования, возможно дистанционое привлечение
+иностранных преподавателей и специалистов в учебный процесс.
+
+Открытие городского \HS\ как досугового центра для интересующихся техникой,
+привлечение старших школьников и студентов к научно-исследовательской и
+производвтсвенной деятельности, не имеет аналогов по России.
+
+}
+
+\frame{\fsec{Этапы}
 
 \begin{itemize}
   \item сбор инициативной группы по проекту из студентов, аспирантов и
   сотрудников СГАУ (+СамГУ?)
   \item интеграция рабочих групп СГАУ по различной тематике (см. \ref{members})
   \item открытие пилотного проекта на базе СГАУ: \textbf{межвузовский
-  центр молодежного инновационного творчества HackSpace <<Чубураторный
+  центр молодежного инновационного творчества HackSpace <<Чебураторный
   завод>>}
   \item наработка опыта организации работы хакспейса, и клиентской базы
   \item достижение режима самоокупаемости за счет коммерческих заказов
   и проведения обучения
-  \item выход на городской уровень, включение учреждений доп.образования (СЮТ) 
+  \item выход на городской уровень, включение образовательных учреждений
   и предприятий 
+  \item открытие учебного завода по опытному, единичному и мелкосерийному
+  производству инновационных продуктов
 \end{itemize}
 }
 
-\frame{\label{members}\frm{Участники}
+\frame{\fsec{Участники}\label{members}
 \begin{itemize}
   \item институт космического приборостроения ИКП-214;
   \item студенческое КБ 5 факультета;
   \item \href{http://aseu.ssau.ru/robotics/}{Центр мехатронных систем и
-  робототехнических комплексов} 
+  робототехнических комплексов}
 \end{itemize}
 
 \bigskip
@@ -154,209 +209,49 @@ HackSpace --- более свободная идеология, она расширяет идею FabLab,
 \begin{itemize}
   \item ВольтМастер Самара (электронные компоненты и оборудование)
   \item Кувалда (станочное оборудование и инструмент)
+  \item АСКОН (комплект САПР Лоцман/Компас3D/CAM)
 \end{itemize}
 }
 
+\frame{\fsec{Ресурсы}
 
-\frame{\frm{Ресурсы}}
-\frame{\frm{Интеграция}}
-\frame{\frm{Финансирование}}
-\frame{\frm{Эффективность}}
-\frame{\frm{Безопасность}}
-\frame{\frm{Образование}}
-\frame{\frm{Досуг}}
-\frame{\frm{Инновации}}
-\frame{\frm{Наука}}
+\begin{itemize}
+  \item люди
+  \item \label{site} помещение
+  \item оборудование и инструмент 
+  \item материалы и комплектующие
+  \item программное обеспечение
+  \item финансирование
+  \item коммерческие заказы
+\end{itemize}
 
-% \begin{itemize}
-%   \item Отсталость отечественных технологий на 10..50 лет
-%   \item Неконкурентность по параметру цена/качество
-%   \item Затхлость и оторванность от жизни системы образования
-%   \item Просер ресурсов на (имитацию) обучения ненужным специальностям
-%   \item Дефицит квалифицированных кадров и преподавателей
-%   \item Отсутствие интереса к рабочим профессиям, науке и технологии
-%   \item Морально и физически устаревшее технологическое оборудование
-%   \item Неприятие современных методов организации производства и технологий
-% \end{itemize}
-% }
-% 
-% \frame{\frm{Идея}
-% 
-% 
-% }
-% 
-% \frame{\frm{Размещение}
-% 
-% на базе существующих учреждений дополнительного образования, школ,
-% учебных центров, училищ, нережимных предприятий, ВУЗов, 
-% НИИ\footnote{учреждения-симбионты}\ldots
-% 	
-% }
-% 
-% \frame{\frm{Ссылки}
-% 
-% \begin{thebibliography}{9}
-% 
-% \bibitem{fablab} \href{http://ru.wikipedia.org/wiki/Fab\_lab}{FL Wiki}
-% 
-% \end{thebibliography}
-% 
-% }
-% 
-% \end{document}
-% 
-% 
-% % %% LaTeX Beamer presentation template (requires beamer package)
-% % %% see http://bitbucket.org/rivanvx/beamer/wiki/Home
-% % %% idea contributed by H. Turgut Uyar
-% % %% template based on a template by Till Tantau
-% % %% this template is still evolving - it might differ in future releases!
-% % 
-% % \documentclass{beamer}
-% % 
-% % \mode<presentation>
-% % {
-% % \usetheme{Warsaw}
-% % 
-% % \setbeamercovered{transparent}
-% % }
-% % 
-% % \usepackage[english]{babel}
-% % \usepackage[latin1]{inputenc}
-% % 
-% % % font definitions, try \usepackage{ae} instead of the following
-% % % three lines if you don't like this look
-% % \usepackage{mathptmx}
-% % \usepackage[scaled=.90]{helvet}
-% % \usepackage{courier}
-% % 
-% % 
-% % \usepackage[T1]{fontenc}
-% % 
-% % 
-% % \title{}
-% % 
-% % %\subtitle{}
-% % 
-% % % - Use the \inst{?} command only if the authors have different
-% % %   affiliation.
-% % %\author{F.~Author\inst{1} \and S.~Another\inst{2}}
-% % \author{\inst{1}}
-% % 
-% % % - Use the \inst command only if there are several affiliations.
-% % % - Keep it simple, no one is interested in your street address.
-% % \institute[Universities of]
-% % {
-% % \inst{1}%
-% % Department of Computer Science\\
-% % Univ of S
-% % \and
-% % \inst{2}%
-% % Department of Theoretical Philosophy\\
-% % Univ of E}
-% % 
-% % \date{Date / Occasion}
-% % 
-% % 
-% % % This is only inserted into the PDF information catalog. Can be left
-% % % out.
-% % \subject{Talks}
-% % 
-% % 
-% % 
-% % % If you have a file called "university-logo-filename.xxx", where xxx
-% % % is a graphic format that can be processed by latex or pdflatex,
-% % % resp., then you can add a logo as follows:
-% % 
-% % % \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
-% % % \logo{\pgfuseimage{university-logo}}
-% % 
-% % 
-% % 
-% % % Delete this, if you do not want the table of contents to pop up at
-% % % the beginning of each subsection:
-% % \AtBeginSubsection[]
-% % {
-% % \begin{frame}<beamer>
-% % \frametitle{Outline}
-% % \tableofcontents[currentsection,currentsubsection]
-% % \end{frame}
-% % }
-% % 
-% % % If you wish to uncover everything in a step-wise fashion, uncomment
-% % % the following command:
-% % 
-% % %\beamerdefaultoverlayspecification{<+->}
-% % 
-% % \begin{document}
-% % 
-% % \begin{frame}
-% % \titlepage
-% % \end{frame}
-% % 
-% % \begin{frame}
-% % \frametitle{Outline}
-% % \tableofcontents
-% % % You might wish to add the option [pausesections]
-% % \end{frame}
-% % 
-% % 
-% % \section{Introduction}
-% % 
-% % \subsection[Short First Subsection Name]{First Subsection Name}
-% % 
-% % \begin{frame}
-% % \frametitle{}
-% % \framesubtitle{Subtitles are optional}
-% % 
-% % \begin{itemize}
-% %   \item
-% %   \item
-% % \end{itemize}
-% % \end{frame}
-% % 
-% % \begin{frame}
-% % \frametitle{}
-% % 
-% % % You can create overlays
-% % \begin{itemize}
-% %   \item using the \texttt{pause} command:
-% %   \begin{itemize}
-% %     \item First item.
-% %     \pause
-% %     \item Second item.
-% %   \end{itemize}
-% %   \item using overlay specifications:
-% %   \begin{itemize}
-% %     \item<3-> First item.
-% %     \item<4-> Second item.
-% %   \end{itemize}
-% %   \item using the general \texttt{uncover} command:
-% %   \begin{itemize}
-% %     \uncover<5->{\item First item.}
-% %     \uncover<6->{\item Second item.}
-% %   \end{itemize}
-% % \end{itemize}
-% % \end{frame}
-% % 
-% % \section*{Summary}
-% % 
-% % \begin{frame}
-% % \frametitle<presentation>{Summary}
-% % 
-% % \begin{itemize}
-% %   \item The \alert{first main message} of your talk in one or two lines.
-% % \end{itemize}
-% % 
-% % % The following outlook is optional.
-% % \vskip0pt plus.5fill
-% % \begin{itemize}
-% %   \item Outlook
-% %   \begin{itemize}
-% %     \item Something you haven't solved.
-% %     \item Something else you haven't solved.
-% %   \end{itemize}
-% % \end{itemize}
-% % \end{frame}
+}
+
+\frame{\fsub{Люди}
+Для функционирования \HS а
+}
+
+
+\frame{\fsub{Помещение}\label{site} }
+\frame{\fsub{Оборудование и инструмент}}
+\frame{\fsub{Материалы и комплектующие}}
+\frame{\fsub{Программное обеспечение}}
+\frame{\fsub{Финансирование}}
+\frame{\fsub{Коммерческие заказы}}
+
+\frame{\fsec{Эффективность}
+}
+
+\frame{\fsec{Безопасность}
+}
+
+\frame{\fsec{Образование}
+}
+
+\frame{\fsec{Досуг}
+}
+
+\frame{\fsec{Наука}
+}
 
 \end{document}
