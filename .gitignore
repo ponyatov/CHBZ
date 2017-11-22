@@ -1,5 +1,6 @@
 *.swp
 *~
+*.pdf
 tmp/*
 *.synctex.gz
 *.aux
